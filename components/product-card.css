@@ -1,0 +1,179 @@
+/**
+ * LuxeLoom - 3D Flip Product Card Component Stylesheet
+ * 
+ * Implements CSS 3D Transforms:
+ * - perspective: 1200px (Creates realistic 3D depth)
+ * - transform-style: preserve-3d (Ensures child elements exist in 3D coordinate space)
+ * - backface-visibility: hidden (Hides reverse faces during 180deg flip)
+ * - cubic-bezier(0.34, 1.25, 0.64, 1) (Smooth spring-back luxury rotation)
+ */
+
+/* 1. Perspective Card Wrapper */
+.product-card-3d {
+  position: relative;
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+  border-radius: 8px;
+  background: transparent;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2. 3D Flipper Element */
+.product-card-flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.34, 1.25, 0.64, 1);
+  will-change: transform;
+}
+
+/* 3. 3D Flip Triggers: Hover & .is-flipped */
+.product-card-3d:hover .product-card-flipper,
+.product-card-3d.is-flipped .product-card-flipper {
+  transform: rotateY(180deg);
+}
+
+/* 4. Common Face Properties */
+.product-card-face {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.2s ease, box-shadow 0.35s ease;
+}
+
+/* 5. Front Face (0deg) */
+.product-card-front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #171717;
+  border: 1px solid rgba(198, 161, 91, 0.25);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.product-card-3d:hover .product-card-front {
+  border-color: rgba(198, 161, 91, 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 20px rgba(198, 161, 91, 0.15);
+}
+
+/* 6. Back Face (180deg) */
+.product-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 16px 14px;
+  background: radial-gradient(circle at 50% 0%, rgba(198, 161, 91, 0.16) 0%, #151515 72%);
+  border: 1px solid rgba(198, 161, 91, 0.38);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 20px rgba(198, 161, 91, 0.15);
+  color: #EDE8DF;
+  z-index: 1;
+}
+
+/* 7. Micro-UI Elements */
+.card-flip-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  background: rgba(23, 23, 23, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(198, 161, 91, 0.35);
+  border-radius: 4px;
+  color: #C6A15B;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card-flip-badge:hover {
+  background: #C6A15B;
+  color: #171717;
+  border-color: #C6A15B;
+}
+
+.card-flip-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(198, 161, 91, 0.3);
+  color: #C6A15B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card-flip-btn:hover {
+  background: #C6A15B;
+  color: #171717;
+  transform: rotate(-180deg);
+}
+
+.product-size-chip {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(198, 161, 91, 0.25);
+  color: #EDE8DF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-size-chip:hover {
+  background: rgba(198, 161, 91, 0.2);
+  border-color: #C6A15B;
+  color: #FFFFFF;
+}
+
+.product-size-chip.active {
+  background: #C6A15B;
+  color: #171717;
+  font-weight: 800;
+  border-color: #C6A15B;
+}
+
+.product-color-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.product-color-dot:hover {
+  transform: scale(1.25);
+  border-color: #C6A15B;
+}

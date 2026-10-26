@@ -1,0 +1,227 @@
+<!--
+  LuxeLoom / SmartCart E-Commerce Component
+  TRENDING WOMEN'S FASHION: MANGO PREMIUM WOMEN'S JEANS
+  Tech Stack: HTML, Tailwind CSS, JavaScript (Vanilla ES6)
+  
+  Requirements Met:
+  1. Product Image: High-resolution dark blue Women's Denim Jeans image formatted inside a rounded circular container frame.
+  2. Product Details:
+     - Title: "MANGO PREMIUM WOMEN'S JEANS"
+     - Category Badge: "WOMEN'S FASHION"
+     - Rating: "★ 4.9 (108)"
+     - Pricing: Current price "$299", original price "$375 (-20%)"
+     - Action Buttons & Badges: Top-left "3D FLIP" badge, top-right wishlist heart icon, and bottom gold CTA button "ADD TO WARDROBE"
+  3. Card Interactivity: Smooth 3D flip card hover animation displaying size variants (S, M, L, XL) and fabric care specs on the back panel.
+  4. Code Structure: Modular component code optimized for VS Code Copilot generation.
+-->
+
+<article 
+  class="group [perspective:1200px] relative w-full max-w-sm min-h-[365px] rounded-xl bg-transparent select-none"
+  data-id="ll-brand-w03"
+  data-brand="Mango"
+  data-selected-size="M"
+>
+  <!-- 3D Flipper Container with 0.6s Cubic-Bezier Transition -->
+  <div class="relative w-full h-full flex flex-col [transform-style:preserve-3d] transition-transform duration-600 ease-[cubic-bezier(0.34,1.25,0.64,1)] group-hover:[transform:rotateY(180deg)] group-[.is-flipped]:[transform:rotateY(180deg)]">
+    
+    <!-- ========================================================
+         FRONT SIDE
+         ======================================================== -->
+    <div class="relative w-full h-full flex flex-col bg-[#171717] border border-[#C6A15B]/25 rounded-xl overflow-hidden shadow-2xl [backface-visibility:hidden] [transform:rotateY(0deg)] z-10 transition-colors duration-300 group-hover:border-[#C6A15B]/50">
+      
+      <!-- Compact Media Area (h-48 ~192px) -->
+      <div class="relative w-full h-48 max-h-[192px] flex items-center justify-center p-2 bg-[#111111] overflow-hidden">
+        
+        <!-- Compact Circular Container Frame with Gold Rim -->
+        <div class="relative w-[150px] h-[150px] rounded-full overflow-hidden border-2 border-[#C6A15B]/50 shadow-[0_0_20px_rgba(0,0,0,0.85),0_0_12px_rgba(198,161,91,0.25)] bg-gradient-to-b from-[#1a1a1a] via-[#141414] to-[#0c0c0c] p-1 group-hover:border-[#DFBF7A] group-hover:shadow-[0_0_25px_rgba(198,161,91,0.35)] transition-all duration-500">
+          <img 
+            src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" 
+            alt="MANGO PREMIUM WOMEN'S JEANS" 
+            class="w-full h-full object-cover rounded-full object-[center_30%] transition-transform duration-700 ease-out group-hover:scale-110"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Top-Right Wishlist Heart Icon -->
+        <div class="absolute top-2 right-2 z-20">
+          <button 
+            type="button"
+            class="w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200 shadow-md bg-black/60 backdrop-blur-md border border-[#C6A15B]/40 text-[#DFBF7A] hover:bg-[#C6A15B] hover:text-[#171717]"
+            data-action="wishlist"
+            data-id="ll-brand-w03"
+            title="Add to Wishlist"
+            aria-label="Wishlist toggle"
+          >
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Top-Left 3D Flip Hint Badge -->
+        <div class="absolute top-2 left-2 z-20 flex items-center gap-1 px-1.5 py-0.5 rounded bg-black/75 backdrop-blur-md border border-[#C6A15B]/40 text-[#DFBF7A] text-[9px] font-bold tracking-wider uppercase pointer-events-none group-hover:bg-[#C6A15B] group-hover:text-black transition-colors duration-300">
+          <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+          <span>3D FLIP</span>
+        </div>
+
+        <!-- Quick View Overlay Bar (Slide-Up on Hover) -->
+        <button 
+          type="button"
+          class="absolute bottom-0 left-0 w-full py-1.5 bg-black/85 backdrop-blur-sm border-t border-[#C6A15B]/30 text-white hover:text-black hover:bg-[#DFBF7A] text-[10px] font-bold tracking-widest uppercase flex items-center justify-center gap-1 translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10"
+          data-action="quickview" 
+          data-id="ll-brand-w03"
+        >
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          Quick View
+        </button>
+      </div>
+
+      <!-- Compact Inner Content Details: Pure White Background (#FFFFFF) -->
+      <div class="px-3.5 py-2.5 flex flex-col flex-1 bg-white text-neutral-900 border-t border-[#C6A15B]/20 justify-between">
+        
+        <!-- Category & Rating Row (Tight Spacing) -->
+        <div class="flex items-center justify-between mb-0.5">
+          <span class="text-[10px] uppercase tracking-wider font-bold text-[#9E7B34]">
+            WOMEN'S FASHION
+          </span>
+          <!-- Star Rating: ★ 4.9 (108) -->
+          <div class="flex items-center gap-1 text-[10px] font-semibold text-[#7D6124]" title="4.9 out of 5 stars">
+            <svg class="w-2.5 h-2.5 fill-[#C6A15B]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>★ 4.9</span>
+            <span class="text-neutral-500 font-normal">(108)</span>
+          </div>
+        </div>
+
+        <!-- Product Title: High Contrast Charcoal/Black -->
+        <h3 class="text-xs sm:text-[13px] font-bold text-[#141414] tracking-tight truncate mb-1 group-hover:text-[#9E7B34] transition-colors" title="MANGO PREMIUM WOMEN'S JEANS">
+          MANGO PREMIUM WOMEN'S JEANS
+        </h3>
+
+        <!-- Pricing Row: Compact Margins -->
+        <div class="flex items-baseline gap-1.5 mb-2 mt-0.5">
+          <span class="text-sm font-extrabold text-[#111111]">$299</span>
+          <span class="text-[11px] text-neutral-500 line-through">$375</span>
+          <span class="text-[10px] font-bold text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.2 rounded">-20%</span>
+        </div>
+
+        <!-- Compact Gold ADD TO WARDROBE CTA Button -->
+        <button 
+          type="button"
+          class="w-full py-1.5 px-3 rounded-md bg-gradient-to-r from-[#C6A15B] to-[#A8843E] hover:from-[#DFBF7A] hover:to-[#C6A15B] text-neutral-950 font-bold text-[10px] tracking-wider uppercase flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all duration-200 active:scale-[0.98] border border-[#B38F46]/35"
+          data-action="add-cart"
+          data-id="ll-brand-w03"
+        >
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          ADD TO WARDROBE
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         BACK SIDE (Revealed via 3D Flip)
+         ======================================================== -->
+    <div class="absolute inset-0 w-full h-full flex flex-col justify-between p-3 bg-gradient-to-b from-[#1C1C1C] via-[#161616] to-[#111111] border border-[#C6A15B]/40 rounded-xl overflow-hidden shadow-2xl [backface-visibility:hidden] [transform:rotateY(180deg)] text-neutral-200 z-0">
+      <div>
+        <div class="flex items-center justify-between mb-1">
+          <div class="flex items-center gap-1.5">
+            <span class="text-[9px] uppercase tracking-wider font-bold text-[#C6A15B]">
+              WOMEN'S FASHION
+            </span>
+            <span class="text-[8px] uppercase font-extrabold tracking-wider px-1 py-0.5 rounded bg-[#C6A15B]/15 border border-[#C6A15B]/30 text-[#DFBF7A]">
+              &#10022; Atelier Fit
+            </span>
+          </div>
+          <!-- Flip Back Button -->
+          <button 
+            type="button"
+            class="w-5 h-5 rounded-full bg-white/5 border border-[#C6A15B]/30 text-[#DFBF7A] hover:bg-[#C6A15B] hover:text-black flex items-center justify-center transition-transform hover:-rotate-180" 
+            data-action="flip-card" 
+            data-id="ll-brand-w03" 
+            title="Flip to front"
+          >
+            <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+          </button>
+        </div>
+
+        <!-- Back Title & Price Summary -->
+        <div class="flex items-baseline justify-between gap-1.5 mb-1">
+          <h4 class="text-xs font-serif font-bold text-white truncate" title="MANGO PREMIUM WOMEN'S JEANS">
+            MANGO PREMIUM WOMEN'S JEANS
+          </h4>
+          <span class="text-xs font-extrabold text-[#DFBF7A] whitespace-nowrap">$299</span>
+        </div>
+
+        <p class="text-[10px] italic text-neutral-400 line-clamp-1 leading-normal mb-1.5">
+          High-waisted premium denim tailored from dark navy organic cotton with sculpting contour fit.
+        </p>
+
+        <!-- Fabric Material & Care Instructions Box -->
+        <div class="p-1.5 rounded-md bg-white/[0.03] border border-[#C6A15B]/20 mb-1.5">
+          <div class="flex items-center gap-1 text-[9px] font-bold uppercase tracking-wider text-[#C6A15B] mb-0.5">
+            <svg class="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <span>Denim Specs &amp; Craft</span>
+          </div>
+          <ul class="text-[10px] text-neutral-300 space-y-0.5">
+            <li class="flex items-center gap-1">
+              <span class="text-[#C6A15B] text-[7px]">&diams;</span>
+              <span>100% Selvedge Organic Cotton Denim</span>
+            </li>
+            <li class="flex items-center gap-1">
+              <span class="text-[#C6A15B] text-[7px]">&diams;</span>
+              <span>High-rise contoured waist & wide leg</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Available Sizes (S, M, L, XL) -->
+        <div class="mb-1.5">
+          <span class="block text-[9px] font-bold uppercase tracking-wider text-neutral-400 mb-0.5">Available Sizes</span>
+          <div class="flex flex-wrap gap-1">
+            <button type="button" class="px-2 py-0.5 rounded text-[10px] font-semibold bg-white/5 border border-[#C6A15B]/30 text-neutral-300 hover:border-[#DFBF7A]" data-action="select-size" data-size="S">S</button>
+            <button type="button" class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#C6A15B] text-black border border-[#C6A15B]" data-action="select-size" data-size="M">M</button>
+            <button type="button" class="px-2 py-0.5 rounded text-[10px] font-semibold bg-white/5 border border-[#C6A15B]/30 text-neutral-300 hover:border-[#DFBF7A]" data-action="select-size" data-size="L">L</button>
+            <button type="button" class="px-2 py-0.5 rounded text-[10px] font-semibold bg-white/5 border border-[#C6A15B]/30 text-neutral-300 hover:border-[#DFBF7A]" data-action="select-size" data-size="XL">XL</button>
+          </div>
+        </div>
+
+        <!-- Wash Variants Swatches -->
+        <div class="mb-1">
+          <span class="block text-[9px] font-bold uppercase tracking-wider text-neutral-400 mb-0.5">Wash Variants</span>
+          <div class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded-full border border-white/40 hover:scale-125 transition-transform cursor-pointer" style="background-color: #16233B;" title="Dark Indigo Wash"></span>
+            <span class="w-3 h-3 rounded-full border border-white/40 hover:scale-125 transition-transform cursor-pointer" style="background-color: #1E293B;" title="Midnight Navy"></span>
+            <span class="w-3 h-3 rounded-full border border-white/40 hover:scale-125 transition-transform cursor-pointer" style="background-color: #0F172A;" title="Raw Rinse"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back Action Buttons Row -->
+      <div class="flex items-center gap-1.5 mt-auto pt-1">
+        <button 
+          type="button"
+          class="flex-1 py-1.5 px-2.5 rounded-md bg-gradient-to-r from-[#C6A15B] to-[#A8843E] hover:from-[#DFBF7A] text-neutral-950 font-bold text-[10px] tracking-wider uppercase flex items-center justify-center gap-1 shadow-sm transition-all active:scale-[0.98]"
+          data-action="add-cart"
+          data-id="ll-brand-w03"
+        >
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          ADD TO WARDROBE
+        </button>
+        <button 
+          type="button"
+          class="w-7 h-7 rounded-md bg-white/5 border border-[#C6A15B]/30 text-[#DFBF7A] hover:bg-[#C6A15B] hover:text-black flex items-center justify-center transition-colors"
+          data-action="quickview"
+          data-id="ll-brand-w03"
+          title="Open Lookbook Details"
+        >
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</article>

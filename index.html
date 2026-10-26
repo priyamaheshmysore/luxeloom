@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="LuxeLoom – Luxury Online Fashion & Clothing Shopping. Discover bespoke evening wear, Italian wool tailoring, French flax linen, and handcrafted accessories. Weaving Elegance, Defining Style.">
+  <meta name="keywords"
+    content="LuxeLoom, luxury fashion, clothing, designer apparel, silk gowns, wool coats, men's fashion, women's dresses, kids fashion, couture">
+  <meta name="author" content="LuxeLoom">
+  <title>LuxeLoom – Online Clothing Shopping Website | Weaving Elegance, Defining Style</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23171717'/><path d='M30 25 L30 75 L70 75' stroke='%23C6A15B' stroke-width='8' fill='none' stroke-linecap='round'/><path d='M45 40 L45 75 L80 75' stroke='%23DFBF7A' stroke-width='6' fill='none' stroke-linecap='round'/></svg>">
+</head>
+
+<body>
+
+
+
+  <!-- Announcement Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-msg">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2"
+          stroke-linecap="round">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+          </polygon>
+        </svg>
+        <span>Complimentary Worldwide Express Delivery &bull; Private Atelier Client Services</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="#contact" class="top-bar-link">Concierge Services</a>
+        <a href="#reviews" class="top-bar-link">Reviews</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Professional Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo-wrapper" id="brandLogo">
+        <!-- Minimal Intertwined LuxeLoom SVG Emblem -->
+        <svg class="brand-emblem-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" stroke="#C6A15B" stroke-width="2.5" stroke-dasharray="6 3" />
+          <path d="M34 26 L34 72 L66 72" stroke="#FFFFFF" class="emblem-path-dark" stroke-width="6.5"
+            stroke-linecap="square" />
+          <path d="M46 36 L46 64 L74 64" stroke="#C6A15B" stroke-width="5" stroke-linecap="square" />
+          <polygon points="50,15 54,23 50,31 46,23" fill="#C6A15B" />
+        </svg>
+        <div class="brand-text-block">
+          <span class="brand-logo-text">Luxe<span class="gold-accent">Loom</span></span>
+          <span class="brand-tagline">Weaving Elegance, Defining Style.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#shop" class="nav-link filter-nav-btn" data-category="men">Men</a>
+        <a href="#shop" class="nav-link filter-nav-btn" data-category="women">Women</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions Right -->
+      <div class="header-actions">
+        <!-- Functional Search Bar -->
+        <form class="header-search-form" id="headerSearchForm" role="search">
+          <input type="text" class="header-search-input" id="headerSearchInput" placeholder="Search couture..."
+            aria-label="Search clothing">
+          <button type="submit" class="header-search-submit" title="Search">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Wishlist Button -->
+        <button class="nav-action-btn" id="wishlistTriggerBtn" title="Wishlist" aria-label="View Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
+          </svg>
+          <span class="badge-counter" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Shopping Cart Button -->
+        <button class="nav-action-btn" id="cartTriggerBtn" title="Shopping Cart" aria-label="View Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-counter" id="cartCount">0</span>
+        </button>
+
+        <!-- User Account Button -->
+        <button class="nav-action-btn" id="accountTriggerBtn" title="My Account" aria-label="User Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <span class="brand-logo-text" style="color: #FFFFFF; font-size: 1.3rem;">Luxe<span
+          class="gold-accent">Loom</span></span>
+      <button class="modal-close-btn" id="mobileNavCloseBtn"
+        style="position: static; background: #262626; color: #FFF;">&times;</button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link active">Home <span>&rarr;</span></a>
+      <a href="#shop" class="mobile-nav-link">Shop <span>&rarr;</span></a>
+      <a href="#shop" class="mobile-nav-link filter-nav-btn" data-category="men">Men <span>&rarr;</span></a>
+      <a href="#shop" class="mobile-nav-link filter-nav-btn" data-category="women">Women <span>&rarr;</span></a>
+      <a href="#about" class="mobile-nav-link">About Us <span>&rarr;</span></a>
+      <a href="#services" class="mobile-nav-link">Services <span>&rarr;</span></a>
+      <a href="#gallery" class="mobile-nav-link">Gallery <span>&rarr;</span></a>
+      <a href="#reviews" class="mobile-nav-link">Reviews <span>&rarr;</span></a>
+      <a href="#contact" class="mobile-nav-link">Contact <span>&rarr;</span></a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <p class="mobile-nav-contact">
+        <strong>VIP Concierge Hotline:</strong><br>
+        +1 (800) LUXE-LOOM<br>
+        concierge@luxeloom.com
+      </p>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-wrapper">
+      <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1920&q=85"
+        alt="LuxeLoom Dark Atelier Haute Couture Fabric Weave" class="hero-bg-img" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-bullet"></span>
+        Autumn / Winter Haute Couture 2026
+      </div>
+
+      <h1 class="hero-headline">
+        Discover Your <br>
+        <span class="gold-highlight">Signature Style.</span>
+      </h1>
+
+      <div class="hero-cta-group">
+        <a href="#shop" class="btn btn-primary-gold">
+          Shop Collection
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#gallery" class="btn btn-outline-gold">
+          View Couture Gallery
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating Luxury Badge -->
+    <div class="hero-floating-badge">
+      <div class="badge-crest">
+        &#9813;
+      </div>
+      <div>
+        <div class="badge-text-title">Atelier Craftsmanship</div>
+        <div class="badge-text-sub">Ethically Sourced &bull; Milan &amp; Paris</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: LuxeLoom Fashion Gallery -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-subtitle">Curated Editorial Lookbook</span>
+        <h2 class="section-title">LuxeLoom Fashion Gallery</h2>
+        <div class="section-divider">
+          <span class="section-divider-line"></span>
+          <span class="section-divider-diamond"></span>
+          <span class="section-divider-line"></span>
+        </div>
+        <p class="section-desc">A visual anthology of signature silhouettes, runway editorials, and tailored clothing
+          exclusively for Men and Women.</p>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="gallery-filter-bar reveal-on-scroll" id="galleryFilterBar" role="tablist"
+        aria-label="Fashion Gallery Categories">
+        <button class="gallery-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <span>All Apparel</span>
+        </button>
+        <button class="gallery-filter-btn" data-filter="men" role="tab" aria-selected="false">
+          <span>Men's Fashion</span>
+        </button>
+        <button class="gallery-filter-btn" data-filter="women" role="tab" aria-selected="false">
+          <span>Women's Fashion</span>
+        </button>
+      </div>
+
+      <!-- Responsive Fashion Gallery Grid -->
+      <div class="fashion-gallery-grid reveal-on-scroll" id="fashionGalleryGrid" aria-live="polite">
+        <!-- Injected dynamically via js/app.js from GALLERY_ITEMS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 & 6: Trending Products with Search & Filters -->
+  <section class="section" id="shop" style="background-color: var(--color-bg-card-subtle);">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-subtitle">Exquisite Selection</span>
+        <h2 class="section-title">Trending This Season</h2>
+        <div class="section-divider">
+          <span class="section-divider-line"></span>
+          <span class="section-divider-diamond"></span>
+          <span class="section-divider-line"></span>
+        </div>
+        <p class="section-desc">Hand-selected apparel masterworks exclusively for Men and Women, favored by stylists and
+          luxury tastemakers globally.</p>
+      </div>
+
+      <!-- Functional Search & Filter Bar -->
+      <div class="filter-wrapper reveal-on-scroll" id="shopFilters">
+
+        <!-- Category Filter Pills -->
+        <div class="category-pills" id="shopCategoryPills"
+          style="display: flex; justify-content: center; gap: 12px; margin-bottom: 20px;">
+          <button class="category-pill active" data-category="all">All Apparel</button>
+          <button class="category-pill" data-category="men">Men's Fashion</button>
+          <button class="category-pill" data-category="women">Women's Fashion</button>
+        </div>
+
+        <!-- Top Row: Search Box -->
+        <div class="filter-row-top" style="justify-content: center;">
+          <!-- Search Box -->
+          <div class="filter-search-box" style="max-width: 580px;">
+            <input type="text" class="filter-search-input" id="productSearchInput"
+              placeholder="Search garments by name, textile, or silhouette..." aria-label="Filter products by keyword">
+            <button class="filter-search-btn" id="productSearchBtn" title="Search">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bottom Row: Price Range, Sorting & Status -->
+        <div class="filter-row-bottom">
+          <!-- Price Range Filter -->
+          <div class="price-range-group">
+            <span class="price-range-label">Max Price:</span>
+            <div class="price-slider-wrap">
+              <input type="range" class="price-slider" id="priceRangeSlider" min="100" max="600" step="25" value="600">
+              <span class="price-slider-value" id="priceDisplay">$600</span>
+            </div>
+          </div>
+
+          <!-- Sort Dropdown -->
+          <div class="sort-group">
+            <label for="sortSelect" class="sort-label">Sort by:</label>
+            <select class="sort-select" id="sortSelect">
+              <option value="featured">Featured Collection</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Top Customer Rated</option>
+            </select>
+          </div>
+
+          <!-- Results counter & Reset -->
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <span class="filter-results-info" id="filterCount">Showing styles</span>
+            <button class="filter-reset-btn" id="filterResetBtn">Reset Filters</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Responsive Product Grid -->
+      <div class="product-grid" id="productGrid" aria-live="polite">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 9: About Us & Services (The LuxeLoom Heritage) -->
+  <section class="section about-section" id="about">
+    <div class="container">
+
+      <!-- About Us Header -->
+      <div class="section-header reveal-on-scroll">
+        <span class="section-subtitle">Our Heritage &amp; Story</span>
+        <h2 class="section-title">About LuxeLoom</h2>
+        <div class="section-divider">
+          <span class="section-divider-line"></span>
+          <span class="section-divider-diamond"></span>
+          <span class="section-divider-line"></span>
+        </div>
+        <p class="section-desc">Weaving Elegance, Defining Style &mdash; Bringing timeless sophistication and
+          contemporary trends to everyone.</p>
+      </div>
+
+      <!-- Brand Introduction & Story Grid with Stylish Fashion Image -->
+      <div class="about-hero-grid reveal-on-scroll">
+
+        <!-- Left: Story, Mission, Vision, Philosophy, CTA -->
+        <div class="about-story-col">
+          <div class="about-story-tag">
+            <span class="about-tag-dot"></span>
+            Modern Fashion Destination
+          </div>
+
+          <h3 class="about-story-heading">
+            Elegance, Comfort &amp; Style <span class="gold-highlight">For Everyone.</span>
+          </h3>
+
+          <p class="about-intro-text">
+            LuxeLoom is a modern fashion destination dedicated to bringing elegance, comfort, and style to everyone. We
+            believe fashion is a way to express individuality and confidence. Our collections combine timeless elegance
+            with contemporary trends to help customers discover their unique style.
+          </p>
+
+          <!-- Mission & Vision Cards -->
+          <div class="about-mv-grid">
+            <div class="about-mv-card">
+              <div class="about-mv-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <div class="about-mv-body">
+                <h4 class="about-mv-title">Our Mission</h4>
+                <p class="about-mv-desc">To make stylish, comfortable, and quality fashion accessible to everyone.</p>
+              </div>
+            </div>
+
+            <div class="about-mv-card">
+              <div class="about-mv-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="about-mv-body">
+                <h4 class="about-mv-title">Our Vision</h4>
+                <p class="about-mv-desc">To become a trusted fashion destination known for elegance, creativity, and
+                  customer satisfaction.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fashion Philosophy -->
+          <div class="about-philosophy-card">
+            <div class="philosophy-header">
+              <span class="philosophy-crest">&#9813;</span>
+              <span class="philosophy-title">Our Fashion Philosophy</span>
+            </div>
+            <p class="philosophy-quote">
+              At LuxeLoom, we regard fashion as an empowering form of personal expression. We harmonize enduring
+              sartorial elegance with dynamic contemporary trends, creating garments that make you feel authentic,
+              poised, and effortlessly stylish every day.
+            </p>
+          </div>
+
+          <!-- Explore Our Collection Action Button -->
+          <div class="about-cta-wrapper">
+            <a href="#shop" class="btn btn-primary-gold" id="aboutExploreCollectionBtn">
+              Explore Our Collection
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#gallery" class="btn btn-outline-gold">
+              Explore Fashion Gallery
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Stylish Fashion Image beside description -->
+        <div class="about-visual-col">
+          <div class="about-image-card">
+            <div class="about-image-frame">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85"
+                alt="LuxeLoom Editorial Fashion Model" class="about-editorial-img" loading="lazy">
+              <div class="about-img-overlay"></div>
+            </div>
+            <div class="about-gold-border-decor"></div>
+
+            <!-- Floating Badge on Image -->
+            <div class="about-floating-card">
+              <div class="floating-card-crest">&#10022;</div>
+              <div>
+                <div class="floating-card-title">Artisanal Atelier</div>
+                <div class="floating-card-sub">Ethical Weaving &bull; Timeless Modern Style</div>
+              </div>
+            </div>
+
+            <!-- Stats Ribbon -->
+            <div class="about-stats-ribbon">
+              <div class="about-stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-lbl">Premium Textiles</span>
+              </div>
+              <div class="about-stat-sep"></div>
+              <div class="about-stat-item">
+                <span class="stat-num">25k+</span>
+                <span class="stat-lbl">Happy Patrons</span>
+              </div>
+              <div class="about-stat-sep"></div>
+              <div class="about-stat-item">
+                <span class="stat-num">4.9 &#9733;</span>
+                <span class="stat-lbl">Global Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Luxury Services Section (Retains id="services" for navigation) -->
+      <div class="why-choose-section" id="services">
+        <div class="section-header reveal-on-scroll" style="margin-top: 50px;">
+          <span class="section-subtitle">LUXURY SERVICES</span>
+          <h3 class="section-title" style="font-size: 2.1rem;">CRAFTED FOR YOU</h3>
+          <div class="section-divider">
+            <span class="section-divider-line"></span>
+            <span class="section-divider-diamond"></span>
+            <span class="section-divider-line"></span>
+          </div>
+          <p class="section-desc">Experience our signature haute couture atelier services, curated exclusively for your
+            personal silhouette and lifestyle.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <!-- Service 1: Bespoke Tailoring -->
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h4 class="feature-title">Bespoke Tailoring</h4>
+            <p class="feature-desc">Custom-made garments crafted exclusively to your measurements with master artisan
+              precision and hand-finished detailing.</p>
+          </div>
+
+          <!-- Service 2: Atelier Alterations -->
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M12 3a3 3 0 0 0-3 3c0 1.25.75 2.33 1.83 2.75L2 15a2 2 0 0 0 1 3.5h18a2 2 0 0 0 1-3.5l-8.83-6.25A3 3 0 0 0 15 6a3 3 0 0 0-3-3z">
+                </path>
+                <circle cx="12" cy="15" r="1.5" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <h4 class="feature-title">Atelier Alterations</h4>
+            <p class="feature-desc">Complimentary precision fitting and tailoring adjustments on all orders to ensure
+              perfect silhouette and comfort.</p>
+          </div>
+
+          <!-- Service 3: Private Styling -->
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M3 18h18v2H3v-2zm2-2l-2-9 5.5 4 3.5-7 3.5 7 5.5-4-2 9H5z"></path>
+                <circle cx="12" cy="5" r="1" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <h4 class="feature-title">Private Styling</h4>
+            <p class="feature-desc">Personalized 1-on-1 fashion advice, wardrobe curation, and couture consultation with
+              our senior luxury stylists.</p>
+          </div>
+
+          <!-- Service 4: Bespoke Fabric Selection -->
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h4 class="feature-title">Bespoke Fabric Selection</h4>
+            <p class="feature-desc">Access our exclusive global library of certified organic silks, cashmere, wools, and
+              rare handwoven textiles.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 10: Customer Reviews (Testimonials Carousel) -->
+  <section class="section" id="reviews" style="background-color: var(--color-bg-card-subtle);">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-subtitle">Discerning Voices</span>
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="section-divider">
+          <span class="section-divider-line"></span>
+          <span class="section-divider-diamond"></span>
+          <span class="section-divider-line"></span>
+        </div>
+        <p class="section-desc">Read reflections from patrons who wear LuxeLoom across international fashion capitals.
+        </p>
+      </div>
+
+      <div class="testimonials-wrapper reveal-on-scroll">
+        <div class="testimonial-track-container" id="testimonialTrack">
+          <!-- Injected via js/app.js -->
+        </div>
+
+        <!-- Controls -->
+        <div class="carousel-controls">
+          <button class="carousel-arrow-btn" id="prevTestimonialBtn" aria-label="Previous Testimonial">
+            &larr;
+          </button>
+          <div class="carousel-dots" id="testimonialDots"></div>
+          <button class="carousel-arrow-btn" id="nextTestimonialBtn" aria-label="Next Testimonial">
+            &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 11: LuxeLoom Contact Us -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout-box reveal-on-scroll">
+        <!-- Header -->
+        <div class="contact-header-left">
+          <span class="section-subtitle">CONTACT US</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="contact-divider-left">
+            <span class="contact-divider-line"></span>
+            <span class="contact-divider-diamond"></span>
+            <span class="contact-divider-line"></span>
+          </div>
+          <p class="contact-desc-text">Have questions or want to place a custom order? Reach out to us directly or visit
+            our local distribution point. We're here to help you get the best nutrition.</p>
+        </div>
+
+        <!-- Vertical Information Stack -->
+        <div class="contact-vertical-stack">
+          <!-- Our Location -->
+          <div class="contact-vertical-item">
+            <div class="contact-round-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-text-block">
+              <span class="contact-label">Our Location</span>
+              <div class="contact-desc">Luxeloom, 297, D.E.F Block, Nimishamba Layout, Kuvempu Nagar, Mysuru-570023
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="contact-vertical-item">
+            <div class="contact-round-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div class="contact-text-block">
+              <span class="contact-label">Phone Number</span>
+              <a href="tel:+919865445868" class="contact-desc contact-link">+91 98654 45868</a>
+            </div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="contact-vertical-item">
+            <div class="contact-round-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-text-block">
+              <span class="contact-label">Email Address</span>
+              <a href="mailto:support@luxeloom.com" class="contact-desc contact-link">support@luxeloom.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 12: Professional Ultra-Luxury Redesigned Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info & Atelier Heritage -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-header">
+            <span class="footer-brand-logo">LUXE<span class="gold-accent">LOOM</span></span>
+            <span class="footer-brand-sub">Haute Couture Atelier</span>
+          </div>
+          <p class="footer-brand-desc">
+            An independent luxury fashion house dedicated to artisanal craftsmanship, bespoke tailoring, and timeless
+            silhouette elegance.
+          </p>
+          <div class="footer-brand-heritage">
+            <span class="heritage-tag">Paris</span>
+            <span class="heritage-sep">•</span>
+            <span class="heritage-tag">Milan</span>
+            <span class="heritage-sep">•</span>
+            <span class="heritage-tag">New York</span>
+            <span class="heritage-sep">•</span>
+            <span class="heritage-tag">London</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links (Single Clean Vertical Column) -->
+        <div class="footer-col footer-col-links">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#shop" class="footer-link">Collections</a></li>
+            <li><a href="#shop" class="footer-link filter-nav-btn" data-category="men">Men's Couture</a></li>
+            <li><a href="#shop" class="footer-link filter-nav-btn" data-category="women">Women's Atelier</a></li>
+            <li><a href="#services" class="footer-link">Bespoke Services</a></li>
+            <li><a href="#gallery" class="footer-link">Fashion Gallery</a></li>
+            <li><a href="#about" class="footer-link">About LuxeLoom</a></li>
+            <li><a href="#reviews" class="footer-link">Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Customer Support -->
+        <div class="footer-col footer-col-support">
+          <h4 class="footer-col-title">Customer Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="#track" class="footer-link modal-info-link" data-info="track">Track Your Order</a></li>
+            <li><a href="#shipping" class="footer-link modal-info-link" data-info="shipping">Complimentary Delivery</a>
+            </li>
+            <li><a href="#returns" class="footer-link modal-info-link" data-info="returns">Refund &amp; Return
+                Policy</a></li>
+            <li><a href="#faq" class="footer-link modal-info-link" data-info="faq">Client Care FAQ</a></li>
+            <li><a href="#privacy" class="footer-link modal-info-link" data-info="privacy">Privacy &amp; Discretion</a>
+            </li>
+            <li><a href="#terms" class="footer-link modal-info-link" data-info="terms">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: VIP Concierge & Contact -->
+        <div class="footer-col footer-col-concierge">
+          <h4 class="footer-col-title">VIP Concierge</h4>
+          <p class="footer-concierge-intro">
+            Dedicated private client advisors available 24/7 for bespoke sizing, commissions, and private consultation.
+          </p>
+          <ul class="footer-contact-info-list">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>88 Central Park South, New York, NY</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:concierge@luxeloom.com" class="footer-contact-link">concierge@luxeloom.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <a href="tel:+919865445868" class="footer-contact-link">+91 98654 45868</a>
+            </li>
+          </ul>
+          <div class="footer-concierge-card">
+            <span class="concierge-crest-icon">⚜</span>
+            <div>
+              <div class="concierge-card-title">Private Styling Consultation</div>
+              <div class="concierge-card-sub">Mon – Sat: 9:00 AM – 8:00 PM EST</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modern Interactive Social Hover Tooltip Dock (Uiverse Style by MrBishtji) -->
+      <div class="footer-social-dock-wrapper">
+        <span class="social-dock-label">Connect With Our Atelier</span>
+        <ul class="social-tooltip-dock" aria-label="Social Media Channels">
+          <!-- Instagram -->
+          <li class="social-dock-item instagram">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-dock-link"
+              aria-label="Follow LUXELOOM on Instagram">
+              <span class="social-dock-tooltip">Instagram</span>
+              <svg class="social-dock-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </li>
+
+          <!-- LinkedIn -->
+          <li class="social-dock-item linkedin">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-dock-link"
+              aria-label="Connect with LUXELOOM on LinkedIn">
+              <span class="social-dock-tooltip">LinkedIn</span>
+              <svg class="social-dock-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </li>
+
+          <!-- WhatsApp -->
+          <li class="social-dock-item whatsapp">
+            <a href="https://wa.me/919865445868?text=Hello%20LUXELOOM,%20I%20have%20an%20inquiry%20about%20your%20luxury%20collection."
+              target="_blank" rel="noopener noreferrer" class="social-dock-link"
+              aria-label="Chat on WhatsApp with LUXELOOM">
+              <span class="social-dock-tooltip">WhatsApp</span>
+              <svg class="social-dock-svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- YouTube -->
+          <li class="social-dock-item youtube">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-dock-link"
+              aria-label="Watch LUXELOOM Runway on YouTube">
+              <span class="social-dock-tooltip">YouTube</span>
+              <svg class="social-dock-svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Centered Mobile-Friendly Copyright Bar -->
+      <div class="footer-copyright-bar">
+        <p class="footer-copyright-text">&copy; 2026 LUXELOOM. Crafted with Haute Couture Excellence.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODALS & DRAWERS
+       ========================================================================= -->
+
+  <!-- Side Cart Drawer -->
+  <div class="mobile-nav-backdrop" id="cartDrawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3 class="cart-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        Your Wardrobe Cart (<span id="cartDrawerCount">0</span>)
+      </h3>
+      <button class="modal-close-btn" id="cartCloseBtn" aria-label="Close Cart">&times;</button>
+    </div>
+
+    <!-- Items list -->
+    <div class="cart-items-list" id="cartItemsContainer">
+      <!-- Injected by js/app.js -->
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-calc-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotalVal">$0.00</span>
+      </div>
+      <div class="cart-calc-row">
+        <span>Complimentary Express Shipping</span>
+        <span id="cartShippingVal" style="color: var(--color-gold-dark); font-weight: 600;">Complimentary</span>
+      </div>
+      <div class="cart-calc-row total-row">
+        <span>Total</span>
+        <span id="cartTotalVal">$0.00</span>
+      </div>
+      <div class="cart-shipping-note">
+        &check; Includes luxury gift packaging &amp; garment protection
+      </div>
+
+      <button class="btn btn-primary-gold" id="proceedCheckoutBtn" style="width: 100%;">
+        Proceed to Checkout &rarr;
+      </button>
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewOverlay">
+    <div class="modal-box quick-view-modal">
+      <button class="modal-close-btn" id="quickViewCloseBtn" aria-label="Close Quick View">&times;</button>
+      <div class="quick-view-grid" id="quickViewContent">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer / Modal -->
+  <div class="modal-overlay" id="wishlistOverlay">
+    <div class="modal-box" style="width: 100%; max-width: 640px; padding: 32px;">
+      <button class="modal-close-btn" id="wishlistCloseBtn" aria-label="Close Wishlist">&times;</button>
+      <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 20px; color: var(--color-primary);">
+        Saved Wishlist Pieces (<span id="wishlistModalCount">0</span>)
+      </h3>
+      <div id="wishlistItemsContainer"
+        style="display: flex; flex-direction: column; gap: 16px; max-height: 60vh; overflow-y: auto;">
+        <!-- Injected by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkoutOverlay">
+    <div class="modal-box checkout-modal">
+      <button class="modal-close-btn" id="checkoutCloseBtn" aria-label="Close Checkout">&times;</button>
+
+      <div id="checkoutFormStep">
+        <h3 class="checkout-heading">Private Concierge Checkout</h3>
+        <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-bottom: 24px;">
+          * Demo Checkout: All orders placed in this preview receive instant simulated confirmation and tracking ID.
+        </p>
+
+        <form id="checkoutForm" novalidate>
+          <div class="checkout-grid">
+            <div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="checkoutFirstName">First Name *</label>
+                  <input type="text" class="form-input" id="checkoutFirstName" required placeholder="Alexander">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="checkoutLastName">Last Name *</label>
+                  <input type="text" class="form-input" id="checkoutLastName" required placeholder="Sterling">
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="checkoutEmail">Email Address *</label>
+                  <input type="email" class="form-input" id="checkoutEmail" required
+                    placeholder="a.sterling@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="checkoutPhone">Phone Number *</label>
+                  <input type="tel" class="form-input" id="checkoutPhone" required placeholder="+1 (555) 234-5678">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="checkoutAddress">Delivery Address *</label>
+                <input type="text" class="form-input" id="checkoutAddress" required
+                  placeholder="Penthouse 4B, 88 Central Park South">
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="checkoutCity">City *</label>
+                  <input type="text" class="form-input" id="checkoutCity" required placeholder="New York">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="checkoutPostal">Postal Code *</label>
+                  <input type="text" class="form-input" id="checkoutPostal" required placeholder="10019">
+                </div>
+              </div>
+
+              <!-- Payment Method Selector -->
+              <div class="form-group">
+                <label class="form-label">Payment Preference</label>
+                <div class="payment-method-selector">
+                  <div class="payment-option-card active" data-method="card">
+                    &bull; Credit / Debit Card
+                  </div>
+                  <div class="payment-option-card" data-method="applepay">
+                    &bull; Apple Pay
+                  </div>
+                  <div class="payment-option-card" data-method="concierge">
+                    &bull; Concierge Delivery
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Summary Column -->
+            <div class="checkout-summary-box">
+              <h4 style="font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 16px;">Order Summary</h4>
+              <div id="checkoutSummaryItems"
+                style="font-size: 0.82rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                <!-- items summary -->
+              </div>
+              <div class="cart-calc-row">
+                <span>Subtotal</span>
+                <span id="checkoutSubtotalVal">$0.00</span>
+              </div>
+              <div class="cart-calc-row">
+                <span>Courier Delivery</span>
+                <span style="color: var(--color-gold-dark); font-weight: 700;">FREE</span>
+              </div>
+              <div class="cart-calc-row total-row">
+                <span>Final Total</span>
+                <span id="checkoutTotalVal" style="color: var(--color-primary);">$0.00</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary-gold" style="width: 100%; margin-top: 20px;">
+                Confirm Order &rarr;
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Order Confirmation Step (Hidden Initially) -->
+      <div id="checkoutSuccessStep" class="order-success-box" style="display: none;">
+        <div class="order-success-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 10px;">Order Confirmed</h3>
+        <p style="color: var(--color-text-muted); margin-bottom: 16px;">
+          Thank you for choosing LuxeLoom. Your order has been registered in our private client ledger.
+        </p>
+        <div
+          style="background: var(--color-bg-cream); border: 1px dashed var(--color-gold); padding: 14px; border-radius: 4px; display: inline-block; margin-bottom: 24px;">
+          <span style="font-size: 0.85rem; color: var(--color-text-dark);">Tracking Reference: </span>
+          <strong id="confirmedOrderId"
+            style="font-family: monospace; color: var(--color-gold-dark); font-size: 1rem;">LX-849201</strong>
+        </div>
+        <div>
+          <button class="btn btn-primary-gold" id="continueShoppingBtn">
+            Continue Shopping
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LuxeLoom Fashion Gallery Lightbox Modal -->
+  <div class="gallery-lightbox-overlay" id="galleryLightbox" role="dialog" aria-modal="true"
+    aria-label="Fashion Gallery Lightbox">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-container">
+      <!-- Close Button -->
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close Lightbox">&times;</button>
+
+      <!-- Prev & Next Arrows -->
+      <button class="lightbox-arrow lightbox-prev" id="lightboxPrevBtn" aria-label="Previous Image"
+        title="Previous (Left Arrow)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="lightbox-arrow lightbox-next" id="lightboxNextBtn" aria-label="Next Image"
+        title="Next (Right Arrow)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Main Media & Meta -->
+      <div class="lightbox-content-box">
+        <div class="lightbox-media-frame">
+          <img src="" alt="" id="lightboxImg" class="lightbox-main-img">
+        </div>
+        <div class="lightbox-meta-panel">
+          <div class="lightbox-meta-top">
+            <span class="lightbox-category-badge" id="lightboxCatBadge">Collection</span>
+            <span class="lightbox-index-counter" id="lightboxCounter">1 of 14</span>
+          </div>
+          <h3 class="lightbox-item-title" id="lightboxTitle">Editorial Title</h3>
+          <p class="lightbox-item-desc" id="lightboxDesc">Silhouette description and editorial notes.</p>
+          <div class="lightbox-actions">
+            <a href="#shop" class="btn btn-primary-gold" id="lightboxShopBtn"
+              style="padding: 9px 20px; font-size: 0.85rem;">
+              Shop Similar Styles &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Account Demo Modal -->
+  <div class="modal-overlay" id="accountOverlay">
+    <div class="modal-box" style="width: 100%; max-width: 460px; padding: 32px; text-align: center;">
+      <button class="modal-close-btn" id="accountCloseBtn" aria-label="Close Account">&times;</button>
+      <div
+        style="width: 68px; height: 68px; border-radius: 50%; background: var(--color-bg-cream); border: 2px solid var(--color-gold); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; color: var(--color-gold);">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+      <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 6px;">LuxeLoom Concierge</h3>
+      <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-bottom: 20px;">
+        Welcome back, VIP Patron. Access your bespoke orders and saved measurements.
+      </p>
+
+      <div
+        style="text-align: left; background: var(--color-bg-cream); border: 1px solid var(--color-border); border-radius: 6px; padding: 16px; margin-bottom: 20px;">
+        <div style="font-size: 0.85rem; margin-bottom: 6px;"><strong>Client:</strong> Alexander Sterling</div>
+        <div style="font-size: 0.85rem; margin-bottom: 6px;"><strong>Status:</strong> Haute Couture Tier &bull; Gold
+          Member</div>
+        <div style="font-size: 0.85rem; margin-bottom: 6px;"><strong>Private Concierge:</strong> Genevieve (Atelier
+          Paris)</div>
+        <div style="font-size: 0.85rem;"><strong>Available Rewards:</strong> 1,450 LuxePoints</div>
+      </div>
+
+      <button class="btn btn-primary-gold" style="width: 100%;"
+        onclick="document.getElementById('accountOverlay').classList.remove('open')">
+        Close Concierge Card
+      </button>
+    </div>
+  </div>
+
+  <!-- Information / Policy Modal -->
+  <div class="modal-overlay" id="infoModalOverlay">
+    <div class="modal-box" style="width: 100%; max-width: 600px; padding: 32px;">
+      <button class="modal-close-btn" id="infoModalCloseBtn" aria-label="Close Info">&times;</button>
+      <h3 id="infoModalTitle"
+        style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 14px; color: var(--color-primary);">
+      </h3>
+      <div id="infoModalBody" style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.7;"></div>
+    </div>
+  </div>
+
+  <!-- Fixed Floating Action Buttons (Bottom Right) -->
+  <aside class="floating-action-buttons" aria-label="Quick Concierge Contact Actions">
+    <!-- Chat on WhatsApp -->
+    <a href="https://wa.me/919865445868?text=Hello%20LUXELOOM,%20I%20have%20an%20inquiry%20about%20your%20luxury%20collection."
+      target="_blank" rel="noopener noreferrer" class="contact-btn-whatsapp floating-btn"
+      aria-label="Chat on WhatsApp with LUXELOOM">
+      <svg class="whatsapp-btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+      </svg>
+      <span>Chat on WhatsApp</span>
+    </a>
+
+    <!-- Call Now -->
+    <a href="tel:+919865445868" class="contact-btn-call floating-btn" aria-label="Call LUXELOOM">
+      <svg class="call-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+        </path>
+      </svg>
+      <span>Call Now</span>
+    </a>
+  </aside>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="assertive"></div>
+
+  <!-- Core Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
